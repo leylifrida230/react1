@@ -17,7 +17,7 @@ class Main extends React.Component{ // membuat class sesuai nama
         ]
         return(
             <div className="container">
-               {/* <Alert bg="success" title="ahh mantab">
+               <Alert bg="success" title="ahh mantab">
                     Semangat ya bund
                     <Alert bg="warning" title="di jaga ya" >
                         jan maen-maen jan maen-maen
@@ -25,10 +25,11 @@ class Main extends React.Component{ // membuat class sesuai nama
                 </Alert> 
                 <Alert bg="danger" title="waduh" >heh ati ati kepleset</Alert>
                 <Alert bg="info" title="yok yok" >wes to lk tibo i ndang tangi</Alert>
-                <Alert bg="dark" title="ngepet yok" >Yok nyerah ngepet aja uda wkwkk</Alert>*/}
-               {/*<Counter/> */}
+                <Alert bg="dark" title="ngepet yok" >Yok nyerah ngepet aja uda wkwkk</Alert>
 
-               {/* implementasi dari array to component */}
+               <Counter/> {/** yang plus minus itu loooo */}
+
+               {/* implementasi dari array to component (mungkin yang manipulasi state, judul judul pesan pesan) */}
                {data.map(item => (
                    <Alert bg={item.color} title={item.title}>
                        {item.message}
